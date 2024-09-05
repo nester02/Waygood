@@ -1,0 +1,25 @@
+.info-column {
+    text-align: center;
+    padding: 23px 0 61px;
+}
+.info-heading {
+    margin-top: 73px;
+    font-size: 13px;
+    line-height: 13px; /* 100% */
+    letter-spacing: 2.08px;
+    text-transform: uppercase;
+}
+.info-heading.second {
+    margin: 15px 0 24px;
+}
+.info-links {
+}
+.info-links a {
+    text-decoration: underline 1px solid rgba(0, 0, 0, 0.30);
+}
+.info-column p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 22.4px; /* 140% */
+    letter-spacing: 0.32px;
+}

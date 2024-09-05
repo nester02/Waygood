@@ -1,0 +1,34 @@
+.vouchers-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 66px 0;
+    flex-wrap: wrap;
+}
+.vouchers-img {
+    margin-right: 15px;
+    overflow: hidden;
+    max-width: 514px;
+}
+.vouchers-text {
+    margin-top: 32px;
+    max-width: 371px;
+}
+.vouchers-text h1 {
+    margin: 38px 0 51px;
+    font-size: 60px;
+}
+@media (max-width: 899px) {
+    .vouchers-img img {
+        width: 100%;
+        object-fit: cover;
+        height: 359px;
+    }
+    .vouchers-text h1 {
+        margin: 20px 0 27px;
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .wrapper-img {
+        display: none;
+    }
+}

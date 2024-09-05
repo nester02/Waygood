@@ -1,0 +1,99 @@
+.header {
+    padding: 24px 0 24px;
+    background: #FAF5E5;
+}
+.header-container {
+    padding: 0 56px 0 84px;
+    margin: 0 auto;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 11px;
+    letter-spacing: 0.99px;
+    color: #000;
+}
+.nav-list {
+    display: flex;
+    column-gap: 18px;
+}
+.nav-button {
+    display: none;
+}
+.nav-link {
+    color: rgba(23, 23, 23, 0.90);
+    font-size: 11px;
+    letter-spacing: 0.99px;
+    text-transform: uppercase;
+}
+
+/*.line{*/
+/*    width: 20px;*/
+/*    height: 3px;*/
+/*    background-color: black;*/
+/*    position: relative;*/
+/*}*/
+
+/*.line::before{*/
+/*    content: "";*/
+/*    width: 20px;*/
+/*    height: 3px;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: -10px;*/
+/*    background-color: black;*/
+/*}*/
+
+/*.line::after{*/
+/*    content: "";*/
+/*    width: 20px;*/
+/*    height: 3px;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 10px;*/
+/*    background-color: black;*/
+/*}*/
+
+@media  (max-width: 991px) {
+    .nav-list {
+        display: none;
+    }
+    .nav-button {
+        display: block;
+    }
+    .nav.open .nav-list{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 1;
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        font-weight: 600;
+    }
+    .nav-link {
+        font-size: 27px;
+    }
+    .nav-item a {
+        color: #828282;
+    }
+    .nav-item a:hover,
+    .nav-item a:focus {
+        color: #000;
+    }
+    .nav-button {
+        position: fixed;
+        z-index: 9;
+        top: 41px;
+        right: 30px;
+    }
+}
